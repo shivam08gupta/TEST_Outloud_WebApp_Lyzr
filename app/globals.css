@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+:root {
+    --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    --background: 240 100% 98%;
+    --foreground: 240 27.6% 22.7%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 27.6% 22.7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 27.6% 22.7%;
+    --primary: 251.9 55.8% 57.5%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 249.4 100% 93.7%;
+    --secondary-foreground: 249.4 33.3% 37.6%;
+    --muted: 240 50% 96.1%;
+    --muted-foreground: 240 12.2% 47.9936%;
+    --accent: 218.5 100% 92.4%;
+    --accent-foreground: 240 27.6% 22.7%;
+    --destructive: 350.2 100% 66.5%;
+    --destructive-foreground: 0 0% 17.0588%;
+    --border: 240 34.8% 91%;
+    --input: 240 34.8% 91%;
+    --ring: 251.9 55.8% 57.5%;
+    --chart-1: 251.9 55.8% 57.5%;
+    --chart-2: 249.6 94.9% 76.9%;
+    --chart-3: 239.2 82% 65.1%;
+    --chart-4: 243.2 93% 72%;
+    --chart-5: 243.7 47.3% 47.6%;
+    --radius: 0.5rem;
+    --sidebar-background: 240 50% 96.1%;
+    --sidebar-foreground: 240 27.6% 22.7%;
+    --sidebar-primary: 251.9 55.8% 57.5%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 218.5 100% 92.4%;
+    --sidebar-accent-foreground: 240 27.6% 22.7%;
+    --sidebar-border: 240 34.8% 91%;
+    --sidebar-ring: 251.9 55.8% 57.5%;
+}
+
+.dark {
+    --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    --background: 240 26.8% 8%;
+    --foreground: 240 48.7% 92.4%;
+    --card: 240 27.8% 14.1%;
+    --card-foreground: 240 48.7% 92.4%;
+    --popover: 240 27.8% 14.1%;
+    --popover-foreground: 240 48.7% 92.4%;
+    --primary: 251.3 100% 78%;
+    --primary-foreground: 240 26.8% 8%;
+    --secondary: 242.9 32.8% 25.1%;
+    --secondary-foreground: 242 100% 88%;
+    --muted: 240 33.3% 20%;
+    --muted-foreground: 240 20.3% 69%;
+    --accent: 240 33.3% 28.2%;
+    --accent-foreground: 240 48.7% 92.4%;
+    --destructive: 350.2 100% 66.5%;
+    --destructive-foreground: 0 0% 17.0588%;
+    --border: 240 26.2% 25.5%;
+    --input: 240 26.2% 25.5%;
+    --ring: 251.3 100% 78%;
+    --chart-1: 251.3 100% 78%;
+    --chart-2: 230.5 44.1% 63.5%;
+    --chart-3: 206.7 89% 67.8%;
+    --chart-4: 174.3 41.8% 50.8%;
+    --chart-5: 325.5 100% 73.7%;
+    --radius: 0.5rem;
+    --sidebar-background: 240 27.8% 14.1%;
+    --sidebar-foreground: 240 48.7% 92.4%;
+    --sidebar-primary: 251.3 100% 78%;
+    --sidebar-primary-foreground: 240 26.8% 8%;
+    --sidebar-accent: 240 33.3% 28.2%;
+    --sidebar-accent-foreground: 240 48.7% 92.4%;
+    --sidebar-border: 240 26.2% 25.5%;
+    --sidebar-ring: 251.3 100% 78%;
+}
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+/* Added by the design-system writer: this theme ships a .dark block,
+   so the app supports both schemes. Native controls and the pre-paint
+   scheme resolver in app/layout.tsx both read this. */
+:root {
+    color-scheme: light dark;
+}
