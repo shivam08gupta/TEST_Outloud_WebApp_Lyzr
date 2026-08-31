@@ -1,0 +1,77 @@
+{
+  "properties": {
+    "focusOn": {
+      "items": {
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "example": {
+            "properties": {
+              "tryInstead": {
+                "type": "string"
+              },
+              "youSaid": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "youSaid",
+              "tryInstead"
+            ],
+            "type": "object"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "description",
+          "example"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "trySayingItThisWay": {
+      "properties": {
+        "suggestion": {
+          "type": "string"
+        },
+        "why": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "suggestion",
+        "why"
+      ],
+      "type": "object"
+    },
+    "whatWentWell": {
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "tags": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "summary",
+        "tags"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "whatWentWell",
+    "focusOn",
+    "trySayingItThisWay"
+  ],
+  "type": "object"
+}
