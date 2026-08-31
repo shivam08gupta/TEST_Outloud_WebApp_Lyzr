@@ -1,0 +1,11 @@
+{
+  "nodes": [
+    {"id": "input", "type": "Input", "label": "User Query", "nodeCategory": "input"},
+    {"id": "agent", "type": "Agent", "label": "Feedback Coach Agent", "nodeCategory": "agent", "agent_id": "6a8e702831e45f765e8e001a"},
+    {"id": "output", "type": "Output", "label": "Coaching Feedback", "nodeCategory": "end"}
+  ],
+  "edges": [
+    {"source": "input", "target": "agent"},
+    {"source": "agent", "target": "output"}
+  ]
+}
